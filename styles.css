@@ -1,0 +1,55 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+
+}
+
+h1 {
+	max-width: 100%
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+
+article {
+	display: inline-block;
+	font-size: 16px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	flex-wrap: wrap;
+}
+
+article > p {
+	margin: 5px;
+	padding: 5px;
+}
+
+.bigimage {
+	justify-content: center;
+	max-width: 100%;
+	margin: 5px;
+	padding: 5px;
+}
+
+@media (min-width: 1000px) {
+	article {
+	display: inline-block;
+	font-size: 16px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	flex-grow: 1;
+	}
+}
