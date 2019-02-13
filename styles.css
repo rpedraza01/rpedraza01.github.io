@@ -6,20 +6,31 @@ html {
 }
 
 body {
-
+	/*margin: 0;
+	padding: 0;*/
+	justify-content: center;
 }
 
-h1 {
+h1, h2, h3 {
 	max-width: 100%
 	margin: 10px;
 	padding: 10px;
 	text-align: center;
 }
 
-h2, h3, h4, h5, h6 {
+h4, h5, h6 {
 	text-align: center;
 	margin: 5px;
 	padding: 5px;
+}
+
+ul {
+	display: inline-block;
+	max-width: 100%;
+}
+
+li {
+	list-style-type: none;
 }
 
 article {
@@ -28,7 +39,6 @@ article {
 	margin: 5px;
 	padding: 5px;
 	border: 1px solid black;
-	flex-wrap: wrap;
 }
 
 article > p {
@@ -36,20 +46,152 @@ article > p {
 	padding: 5px;
 }
 
-.bigimage {
+.list-inline-item {
+	font-size: 24px;
+}
+
+.footer-copyrighttext-centerpy-3 {
+	font-size: 10px;
+}
+
+footer {
+	font-size: 12px;
 	justify-content: center;
-	max-width: 100%;
-	margin: 5px;
-	padding: 5px;
+	margin: auto;
+	padding: auto;
 }
 
 @media (min-width: 1000px) {
+	.container {
+		justify-content: center;
+		display: flex;
+		max-width: 100vh;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+
+	h1, h2 {
+		max-width: 100%
+		margin: 10px;
+		padding: 10px;
+		text-align: center;
+		color: #FFFFFF;
+		text-shadow: #474747 3px 5px 2px;
+	}
+
 	article {
-	display: inline-block;
-	font-size: 16px;
-	margin: 5px;
-	padding: 5px;
-	border: 1px solid black;
-	flex-grow: 1;
+		display: inline-block;
+		font-size: 16px;
+		margin: 5px;
+		padding: 5px;
+		border: 1px solid black;
+		flex-grow: 1;
+	}
+
+	.fa-1x {
+		font-size: 1.5rem;
+	}
+	.navbar-toggler.toggler-example {
+		cursor: pointer;
+	}
+	.dark-blue-text {
+		color: #0A38F5;
+	}
+
+	.wrapper {
+		height: 100vh;
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		perspective: 2px;
+	}
+
+	.section {
+		position: relative;
+		height: 100vh;
+	}
+
+	.parallax::after {
+		content: " ";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform: translateZ(-1px) scale(1.5);
+		background-size: 100%;
+		z-index: -1;
+	}
+
+	.static {
+		background: white;
+	}
+
+	.bg1::after {
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		display: table;
+		background-attachment: fixed;
+		background-image: url("bridge.jpeg");
+		background-repeat: no-repeat;
+	}
+
+	.bg2::after {
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		display: table;
+		background-attachment: fixed;
+		background-image: url("portlandsign.jpg");
+		background-repeat: no-repeat;
+	}
+
+	.bg3::after {
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		display: table;
+		background-attachment: fixed;
+		background-image: url("cityatnight.jpeg");
+		background-repeat: no-repeat;
+	}
+
+	.bg4::after {
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		display: table;
+		background-attachment: fixed;
+		background-image: url("multnomahfalls.jpeg");
+		background-repeat: no-repeat;
+	}
+
+	.bg5::after {
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		display: table;
+		background-attachment: fixed;
+		background-image: url("cityatnight2.jpg");
+		background-repeat: no-repeat;
+	}
+
+	.bg6::after {
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		display: table;
+		background-attachment: fixed;
+		background-image: url("craterlake.jpeg");
+		background-repeat: no-repeat;
 	}
 }
