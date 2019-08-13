@@ -1,5 +1,5 @@
 // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1565718477.76
-importScripts('https://aswpsdkus.com/notify/v1/ua-sdk.min.js')
+self.importScripts('https://aswpsdkus.com/notify/v1/ua-sdk.min.js')
 uaSetup.worker(self, {
   defaultIcon: 'https://rodrigopedraza.com',
   defaultTitle: 'Test Notification',
