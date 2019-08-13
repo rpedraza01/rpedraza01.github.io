@@ -263,7 +263,36 @@
 				</div>
 			</section>
 		</footer>
-	
+		
+	<script type="text/javascript">
+		// 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1565718477.76
+		!function(n,t,c,e,u){function r(n){try{f=n(u)}catch(n){return h=n,void i(p,n)}i(s,f)}function i(n,t){for(var c=0;c<n.length;c++)d(n[c],t);
+		}function o(n,t){return n&&(f?d(n,f):s.push(n)),t&&(h?d(t,h):p.push(t)),l}function a(n){return o(!1,n)}function d(t,c){
+		n.setTimeout(function(){t(c)},0)}var f,h,s=[],p=[],l={then:o,catch:a,_setup:r};n[e]=l;var v=t.createElement("script");
+		v.src=c,v.async=!0,v.id="_uasdk",v.rel=e,t.head.appendChild(v)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
+		  'UA', {
+		    appKey: 'WMjUdzFkTPqO0xKQeaEEkA',
+		    token: 'MTpXTWpVZHpGa1RQcU8weEtRZWFFRWtBOmFIclhwZDhCV0RQdDlNVDRyc1pXcDV2VENONjlsbFBiaXBWQWJXM2hzNWs',
+		    vapidPublicKey: 'BF3FdEoACzsYh70KwAejWQj8uYWrCM2_93nEHxNdl3Vv5uidDGDm9rvztowgFXqKVulgjBXcn0ckcqyj-dkwM-Y=',
+		  });
+	</script>
+
+	<script type="text/javascript">
+		UA.then(function(sdk) {
+		  console.log(sdk.channel.id)
+		}).catch(function(err) {
+		  console.log(err)
+		})
+
+		// Multiple calls have no additional expense.
+		UA.then(function(sdk) {
+		  $('#register').show()
+		  $('#register').click(function(ev) { sdk.register() })
+		})
+	</script>
+
+	<script type="text/javascript" src="push-worker.js"></script>
+
 	<script type="text/javascript" src="hamburger_app.js"></script>
 </body>
 </html>
