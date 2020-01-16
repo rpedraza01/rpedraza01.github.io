@@ -205,5 +205,7 @@ a {
 }
 
 @media (max-width: 768px) {
-		
+		/*p {
+      text-align: center;
+    }*/
 }
